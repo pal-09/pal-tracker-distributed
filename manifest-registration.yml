@@ -10,3 +10,4 @@ applications:
 #  - tracker-eureka
   - tracker-circuit-breaker-dashboard
   - tracker-amqp
+  - tracker-sso
