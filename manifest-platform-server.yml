@@ -1,0 +1,6 @@
+applications:
+- name: tracker-platform-server
+  path: ./platform-services/eureka-server/build/libs/eureka-server.jar
+  host: eureka-pal-sr
+  memory: 1G
+  instances: 1
