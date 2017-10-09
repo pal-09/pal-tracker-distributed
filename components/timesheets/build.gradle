@@ -2,6 +2,7 @@ dependencies {
     compile project(":components:rest-support")
     compile "org.springframework:spring-jdbc:$springVersion"
     compile "com.netflix.hystrix:hystrix-javanica:1.5.6"
+    compile 'org.springframework.data:spring-data-redis:2.0.0.RELEASE'
 
     testCompile project(":components:test-support")
 }
