@@ -147,15 +147,15 @@ jobs:
       path: timesheets-artifacts/timesheets-server*.jar
       current_app_name: tracker-timesheets
 
-- name: deploy-eureka
-  plan:
-  - get: pal-tracker
-    passed: [build]
-    trigger: true
-  - get: eureka-artifacts
-    trigger: false
-  - put: cf
-    params:
-      manifest: pal-tracker/manifest-platform-server.yml
-      path: eureka-artifacts/eureka-server*.jar
-      current_app_name: tracker-eureka
+#- name: deploy-eureka
+#  plan:
+#  - get: pal-tracker
+#    passed: [build]
+#    trigger: true
+#  - get: eureka-artifacts
+#    trigger: false
+#  - put: cf
+#    params:
+#      manifest: pal-tracker/manifest-platform-server.yml
+#      path: eureka-artifacts/eureka-server*.jar
+#      current_app_name: tracker-eureka
